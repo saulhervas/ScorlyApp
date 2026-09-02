@@ -53,6 +53,11 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            // Firebase (GitLive KMP)
+            implementation(libs.gitlive.firebase.common)
+            implementation(libs.gitlive.firebase.auth)
+            implementation(libs.gitlive.firebase.firestore)
+            implementation(libs.gitlive.firebase.analytics)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
