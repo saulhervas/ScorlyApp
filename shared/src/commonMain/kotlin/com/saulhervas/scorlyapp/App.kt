@@ -18,11 +18,16 @@ import org.jetbrains.compose.resources.painterResource
 
 import scorly.shared.generated.resources.Res
 import scorly.shared.generated.resources.compose_multiplatform
+import org.koin.compose.KoinApplication
+import com.saulhervas.scorlyapp.di.appModule
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    KoinApplication(application = {
+        modules(appModule)
+    }) {
+        MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(
             modifier = Modifier
@@ -46,4 +51,5 @@ fun App() {
             }
         }
     }
+}
 }
