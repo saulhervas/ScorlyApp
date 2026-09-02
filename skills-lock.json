@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "android-clean-architecture": {
+      "source": "affaan-m/ecc",
+      "sourceType": "github",
+      "skillPath": "skills/android-clean-architecture/SKILL.md",
+      "computedHash": "80779b595f194a1ca3d59e36cbf4b29f426faaf90cf9c41dfd61a80442214890"
+    },
+    "android-testing": {
+      "source": "new-silvermoon/awesome-android-agent-skills",
+      "sourceType": "github",
+      "skillPath": ".github/skills/testing_and_automation/android-testing/SKILL.md",
+      "computedHash": "744cd26fe4f2b741f86a93d20e72b27399edd8aef8345e908aceae9df37c278c"
+    },
+    "kmp": {
+      "source": "andvl1/claude-plugin",
+      "sourceType": "github",
+      "skillPath": "skills/kmp/SKILL.md",
+      "computedHash": "c883a335d1a18b381f2f1f452423f248bee7003fcf3d21c0c0e1a7bde8c0183a"
+    },
+    "kmp-ktor": {
+      "source": "rcosteira79/android-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/android-skills/skills/kmp-ktor/SKILL.md",
+      "computedHash": "89d38de252a080d05d3bab05db331aece07cfd763935552f796698cf0405a293"
+    },
+    "kmp-navigation": {
+      "source": "ahmed3elshaer/everything-claude-code-mobile",
+      "sourceType": "github",
+      "skillPath": "skills/kmp-navigation/SKILL.md",
+      "computedHash": "c0b0089690d35b8139d532ffb7f99f3a620d47eaa3934b9fe81606cda9704794"
+    }
+  }
+}
