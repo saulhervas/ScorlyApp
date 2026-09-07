@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.googleServices)
     alias(libs.plugins.firebaseCrashlytics)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
@@ -26,6 +27,12 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.crashlytics)
+
+    // Navigation
+    implementation(libs.navigation.compose)
+
+    // Serialization
+    implementation(libs.kotlinx.serialization.json)
 }
 
 android {
