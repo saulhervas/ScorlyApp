@@ -1,5 +1,6 @@
 package com.saulhervas.scorlyapp.di
 
+import com.saulhervas.scorlyapp.data.auth.FirebaseAuthService
 import org.koin.dsl.module
 
 /**
@@ -7,5 +8,5 @@ import org.koin.dsl.module
  * Aquí agruparemos los submódulos de la app (dataModule, domainModule, etc.)
  */
 val appModule = module {
-    // Por ahora vacío. Se irán agregando las dependencias de cada feature.
+    single { FirebaseAuthService() }
 }
