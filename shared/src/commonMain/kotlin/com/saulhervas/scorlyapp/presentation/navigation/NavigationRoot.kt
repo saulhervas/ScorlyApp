@@ -11,6 +11,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.saulhervas.scorlyapp.presentation.auth.LoginScreen
 
 @Composable
 fun NavigationRoot(
@@ -20,16 +21,15 @@ fun NavigationRoot(
         navController = navController,
         startDestination = Route.Login
     ) {
-        // 1. Pantalla de Login (provisional)
+        // 1. Pantalla de Login con Firebase
         composable<Route.Login> {
-            Box(
-                modifier = Modifier.fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                Button(onClick = { navController.navigate(Route.Home) }) {
-                    Text("Iniciar Sesión ➔ Ir a Home")
+            LoginScreen(
+                onLoginSuccess = {
+                    navController.navigate(Route.Home) {
+                        popUpTo(Route.Login) { inclusive = true }
+                    }
                 }
-            }
+            )
         }
 
         // 2. Pantalla de Home (provisional)

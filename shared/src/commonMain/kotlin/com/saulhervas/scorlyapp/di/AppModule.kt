@@ -1,6 +1,8 @@
 package com.saulhervas.scorlyapp.di
 
 import com.saulhervas.scorlyapp.data.auth.FirebaseAuthService
+import com.saulhervas.scorlyapp.presentation.auth.LoginViewModel
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
 /**
@@ -9,4 +11,5 @@ import org.koin.dsl.module
  */
 val appModule = module {
     single { FirebaseAuthService() }
+    viewModelOf(::LoginViewModel)
 }
